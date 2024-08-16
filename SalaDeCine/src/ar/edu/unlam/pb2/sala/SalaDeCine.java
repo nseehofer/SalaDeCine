@@ -31,4 +31,23 @@ public class SalaDeCine {
 		return true;
 	}
 
+	public Boolean ocuparButaca(Integer numeroDeFila, Integer numeroDeButaca) {
+
+		if (this.butacas[numeroDeFila][numeroDeButaca] == false) {
+			this.butacas[numeroDeFila][numeroDeButaca] = true;
+			return true;
+		}
+
+		return false;
+	}
+
+	public Boolean estaOcupada(Integer numeroDeFila, Integer numeroDeButaca) {
+
+		if (this.butacas[numeroDeFila][numeroDeButaca] == true) {
+			return true;
+		}
+
+		return false;
+	}
+
 }

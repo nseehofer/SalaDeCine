@@ -26,11 +26,26 @@ public class SalaDeCineTest {
 	@Test
 
 	public void queSePuedaOcuparUnaButacaVacia() {
+
+		Integer butacasTotales = 10;
+		Integer cantidadFilas = 2;
+		Boolean valorEsperado = true;
+		SalaDeCine sala = new SalaDeCine(butacasTotales, cantidadFilas); // PREPARACION
+		Boolean valorObtenido = sala.ocuparButaca(1, 4);
+		assertEquals(valorEsperado, valorObtenido);
+
 	}
 
 	@Test
 
 	public void consultarButacaOcupada() {
+		Integer butacasTotales = 10;
+		Integer cantidadFilas = 2;
+		Boolean valorEsperado = true;
+		SalaDeCine sala = new SalaDeCine(butacasTotales, cantidadFilas); // PREPARACION
+		Boolean ocupacionTest = sala.ocuparButaca(1, 4);
+		Boolean valorObtenido = sala.estaOcupada(1, 4);
+		assertEquals(valorEsperado, valorObtenido);
 	}
 
 	@Test
