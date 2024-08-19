@@ -50,4 +50,26 @@ public class SalaDeCine {
 		return false;
 	}
 
+	public Integer cantidadDeButacasOcupadas() {
+
+		Integer butacasOcupadas = 0;
+
+		for (int fila = 0; fila < this.cantidadFilas; fila++) {
+			for (int asiento = 0; asiento < this.butacasPorFila; asiento++) {
+				if (this.butacas[fila][asiento] = true) {
+					butacasOcupadas++;
+				}
+			}
+		}
+		return butacasOcupadas;
+	}
+
+	// COMPLETAR ESTE METODO
+
+	public Boolean hayEspacioPara(Integer cantidadDePersonas) {
+		// TODO Auto-generated method stub
+		Boolean hayEspacio = false;
+		return hayEspacio;
+	}
+
 }
